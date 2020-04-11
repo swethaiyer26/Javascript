@@ -1,0 +1,66 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            document.getElementById("demo").innerHTML=Math.floor(Math.random()*10);
+        </script>
+        </body>
+        </html>
+
+        <html>
+            <body>
+      <p id="demo1"></p>
+         <script>
+         document.getElementById("demo1").innerHTML =
+        Math.floor(Math.random() * 11);
+            </script>
+            </body>
+            </html>
+
+            <html>
+            <body>
+          <p id="demo2"></p>
+             <script>
+             document.getElementById("demo2").innerHTML =
+            Math.floor(Math.random() * 100) + 2;
+                </script>
+                </body>
+                </html>
+
+      <html>
+        <body>
+         <p id="demo3"></p>
+         <script>
+        document.getElementById("demo3").innerHTML =
+         Math.floor(Math.random() * 101) + 1;
+         </script>
+         </body>
+          </html>
+
+
+          <html>
+              <body>
+                  <p id="demo4"></p>
+                  <button onclick="document.getElementById('demo4').innerHTML=getRndInteger(0,10)">Click me</button>
+                  <script>
+                      function getRndInteger(min,max) {
+                          return Math.floor(Math.random() * (max + min)) + min;
+                      }
+                </script>
+              </body>
+          </html>
+        
+
+          <html>
+              <body>
+                  <p id="demo5"></p>
+                  <button onclick="document.getElementById('demo5').innerHTML=getRndInteger(0,10)">Click me</button>
+                  <script>
+                      function getRndInteger(min,max) {
+                          return Math.floor(Math.random() * (max - min + 1)) + min;
+                      }
+                </script>
+              </body>
+          </html>
+                  
+            

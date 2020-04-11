@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <h2>Javascript split</h2>
+        <p id="demo"></p>
+        <button onclick="myfunction()">Try it</button>
+        <script>
+            function myfunction() { 
+            var text="a,b,c,d,e";
+            var arr=text.split(",");
+            document.getElementById("demo").innerHTML= arr[0];
+            }
+  </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <h2>Javascript split</h2>
+   <p id="demo"></p>
+   <script>
+       var x = "Hello";
+       var arr=x.split("");
+       var text="";
+       var i;
+       for(i=0;i <arr.length;i++) {
+           text += arr[i]  + "<br>"
+       }
+       document.getElementById("demo").innerHTML=text;
+   </script>
+   </body>
+   </html>

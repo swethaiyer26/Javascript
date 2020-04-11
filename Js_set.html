@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+        var person = {
+firstName:"John",
+lastName:"Doe",
+language :"",
+set lang(lang) {
+    this.language=lang.toUpperCase();
+}
+        };
+        person.lang="en";
+        document.getElementById("demo").innerHTML=person.language;
+    </script>
+    </body>
+</html>
+

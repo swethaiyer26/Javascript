@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="text">Fruit color</p>
+
+<script>
+document.getElementById('text').innerHTML = '<br >' +getFruitColor('Orange');
+document.getElementById('text').innerHTML += '<br >' +getFruitColor('Banana');
+document.getElementById('text').innerHTML += '<br >' +getFruitColor('Pinapple');
+
+
+function getFruitColor(fruit) {
+    var msg;
+    switch(fruit) {
+        case 'Orange':
+            msg = 'Orange is of orange color';
+            break;
+        case 'Apple':
+        case 'Strawberry':
+            msg = 'Apple & Strawberry are of red color';
+            break;
+        case 'Banana':
+            msg = 'Banana is of yellow color';
+            break;
+        default:
+            msg = 'Fruit is not available';
+    }
+    
+    return msg;
+}
+
+</script>
+
+</body>
+</html>

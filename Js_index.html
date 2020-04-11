@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <h2>Array index</h2>
+        <p id="demo"></p>
+        <script>
+            var fruits=["banana","chickoo","cantaloupe"];
+            document.getElementById("demo").innerHTML=fruits;
+            fruits[1]="kiwi";
+            document.getElementById("demo").innerHTML=fruits;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <h2>Array index</h2>
+        <p id="demo1"></p>
+        <button onclick="myfunction()">try it</button>
+        <script>
+             var fruits=["banana","chickoo","cantaloupe"];
+            document.getElementById("demo1").innerHTML=fruits;
+            function myfunction() {
+            fruits[fruits.length]="mango";
+            document.getElementById("demo1").innerHTML=fruits;
+            }
+        </script>
+        </body>
+        </html>

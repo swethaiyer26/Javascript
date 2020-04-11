@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <p id="demo1"></p>
+        <script>
+            class Car {
+                constructor(brand) {
+                    this.carName = brand;
+                }
+                present(x) {
+                    return x + " , I have a " + this.carName;
+                }
+            }
+            mycar = new Car("Audi");
+                document.getElementById("demo1").innerHTML=mycar.present("Hello");
+        </script>
+        </body>
+        </html>
+
+  

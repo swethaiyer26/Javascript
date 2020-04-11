@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <button onclick="myfunction()">Click</button>
+
+        <script>
+            function myfunction() {
+            var hour=new Date() .getHours();
+            var greeting;
+            if (hour < 18) {
+                greeting ="Good Day";
+            } else {
+                greeting ="Good evening";
+            }
+            document.getElementById("demo").innerHTML=greeting;
+        }
+        </script>
+    </body>
+</html>

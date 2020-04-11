@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <h2>Delete array</h2>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <script>
+            var fruits=["chickoo","banana","mango"];
+            document.getElementById("demo").innerHTML=
+            " The first fruit is " + fruits[2];
+            delete fruits[2];
+            document.getElementById("demo1").innerHTML=
+            " The first fruit is " + fruits[2];
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <h2>Splice array</h2>
+        <button onclick="myfunction()">Try it</button>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <script>
+            var fruits=["chickoo","banana","mango","apple"];
+            document.getElementById("demo2").innerHTML="Original Array : <br>"  + fruits;
+            function myfunction() {
+               var removed= fruits.splice(2,2,"lemon","kiwi");
+                document.getElementById("demo3").innerHTML="New Array : <br>"  + fruits;
+                document.getElementById("demo4").innerHTML="Removed items : <br>"  +  removed;
+  }
+        </script>
+    </body>
+</html>

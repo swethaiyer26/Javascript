@@ -1,0 +1,92 @@
+<html>
+    <body>
+        <h2>Date method</h2>
+        <p id="demo"></p>
+        <script>
+            var d=new Date();
+            document.getElementById("demo").innerHTML=d.getTime();
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <h2>Date method</h2>
+        <p id="demo1"></p>
+        <script>
+            var d=new Date();
+            document.getElementById("demo1").innerHTML=d.getFullYear();
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <h2>Date method</h2>
+        <p id="demo2"></p>
+        <script>
+            var d=new Date();
+            document.getElementById("demo2").innerHTML=d.getMonth() + 1;
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <h2>Date method</h2>
+        <p id="demo4"></p>
+        <script>
+            var d=new Date();
+            var months = ["January","February","March","April","May","June","July","August",
+            "September","October","November","December"];
+            document.getElementById("demo4").innerHTML=months[d.getMonth()];
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <h2>Date method</h2>
+        <p id="demo3"></p>
+        <script>
+            var d=new Date();
+            document.getElementById("demo3").innerHTML=d.getDate();
+        </script>
+        </body>
+        </html>
+
+     <html>
+    <body>
+        <h2>Date method</h2>
+        <p id="demo5"></p>
+        <script>
+            var d=new Date();
+            d.setFullYear(2020);
+            document.getElementById("demo5").innerHTML=d ;
+        </script>
+        </body>
+        </html>
+
+        <html>
+            <body>
+                <h2>date method</h2>
+                <p id="demo6"></p>
+                <script>
+                    var today,someday,text;
+                    today=new Date();
+                    someday=new Date();
+                    someday.setFullYear(2100,0,14);
+
+   if(someday > today) {
+
+     text = "Today is before January 14, 2100.";
+} else {
+  text = "Today is after January 14, 2100.";
+}
+   document.getElementById("demo6").innerHTML = text;
+                </script>
+            </body>
+        </html>
+
+

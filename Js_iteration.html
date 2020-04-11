@@ -1,0 +1,171 @@
+p<html>
+    <body>
+        <h2>Array iteration</h2>
+        <p id="demo"></p>
+        <script>
+        var txt="";
+        var numbers=[45, 4, 9, 16, 25];
+        numbers.forEach(myfunction);
+        document.getElementById("demo").innerHTML=txt;
+
+        function myfunction(value,index,array) {
+            txt= txt + value + "<br>";
+        }
+    </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <h2>Array iteration</h2>
+        <p id="demo1"></p>
+        <script>
+        var numbers1=[45, 4, 9, 16, 25];
+        var numbers2=numbers1.map(myfunction);
+        document.getElementById("demo1").innerHTML=numbers2;
+
+        function myfunction(value) {
+            return value * 2;
+        }
+    </script>
+    </body>
+    </html>
+
+    <html>
+    <body>
+        <h2>Array iteration</h2>
+        <p id="demo2"></p>
+        <script>
+        var numbers1=[45, 4, 9, 16, 25];
+        var numbers2=numbers1.filter(myfunction);
+        document.getElementById("demo2").innerHTML=numbers2;
+
+        function myfunction(value) {
+            return value > 10;
+        }
+    </script>
+    </body>
+    </html>
+
+    <html>
+    <body>
+        <h2>Array iteration</h2>
+        <p id="demo2"></p>
+        <script>
+        var numbers=[45, 4, 9, 16, 25];
+        var sum=numbers.reduce(myfunction,100);
+        document.getElementById("demo2").innerHTML= " The sum is " + sum;
+        
+        function myfunction(total,value) {
+            return total + value;
+        }
+</script>
+</body>
+</html>
+
+
+<html>
+    <body>
+        <h2>Array iteration</h2>
+        <p id="demo3"></p>
+        <script>
+        var numbers=[45, 4, 9, 16, 25];
+        var sum=numbers.reduceRight(myfunction);
+        document.getElementById("demo3").innerHTML= " The sum is " + sum;
+        
+        function myfunction(total,value) {
+            return total + value;
+        }
+</script>
+</body>
+</html>
+
+<html>
+    <body>
+        <h2>Array iteration</h2>
+        <p id="demo4"></p>
+        <script>
+        var numbers=[45, 4, 9, 16, 25];
+        var sum=numbers.every(myfunction);
+        document.getElementById("demo4").innerHTML= " The sum is " + sum;
+        
+        function myfunction(value) {
+            return  value > 18;
+        }
+</script>
+</body>
+</html>
+
+<html>
+    <body>
+        <h2>Array iteration</h2>
+        <p id="demo5"></p>
+        <script>
+        var numbers=[45, 4, 9, 16, 25];
+        var sum=numbers.some(myfunction);
+        document.getElementById("demo5").innerHTML= " The sum is " + sum;
+        
+        function myfunction(value) {
+            return  value > 18;
+        }
+</script>
+</body>
+</html>
+
+<html>
+    <body>
+        <h2>Array indexof</h2>
+        <p id="demo6"></p>
+        <script>
+            var fruits=["apple","banana","chickoo","mango","apple"];
+            var i=fruits.indexOf("banana");
+            document.getElementById("demo6").innerHTML=i;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <h2>Array indexof</h2>
+        <p id="demo7"></p>
+        <script>
+        var fruits=["apple","banana","chickoo","mango","apple","plum"];
+        var x=fruits.lastIndexOf("apple")
+        document.getElementById("demo7").innerHTML= x;
+</script>
+</body>
+</html>
+
+
+<html>
+    <body>
+        <h2>Array find</h2>
+        <p id="demo8"></p>
+        <script>
+            var numbers=[45,56,7,89,23,5];
+            var sum=numbers.find(myfunction);
+            document.getElementById("demo8").innerHTML=sum;
+
+        function myfunction(value) {
+            return value > 23;
+        }
+    </script>
+    </body>
+    </html>
+
+    <html>
+    <body>
+        <h2>Array find</h2>
+        <p id="demo9"></p>
+        <script>
+            var numbers=[45,56,7,89,23,5];
+            var sum=numbers.findIndex(myfunction);
+            document.getElementById("demo9").innerHTML=sum;
+
+        function myfunction(value) {
+            return value > 45;
+        }
+    </script>
+    </body>
+    </html>
+

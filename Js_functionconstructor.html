@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+        function myfunction(arg1,arg2) {
+            this.firstName=arg1;
+            this.lastName=arg2;
+        }
+        var x= new myfunction("Swetha","Janardhan")
+            document.getElementById("demo").innerHTML= x.firstName  +  " "  + x.lastName;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id="demo1"></p>
+        <script>
+            var myObject={
+                firstName:"John",
+                lastName:"Doe",
+                fullName:function() {
+                  return  this.firstName  +  "  "   + this.lastName;
+                }
+                }
+                x=myObject.fullName();
+                document.getElementById("demo1").innerHTML=x;
+        </script>
+    </body>
+</html>

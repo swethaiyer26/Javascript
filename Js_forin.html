@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+var text="";
+var person={fname:"John",lname:"Doe",age:25};
+var x;
+for(x in person) {
+    text+= person[x] + " ";
+}
+document.getElementById("demo").innerHTML=text;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id="demo1"></p>
+        <script>
+            var cars=['BMW','Volvo','Mini'];
+            var x;
+            for(x of cars) {
+                document.write(x + " <br>");
+            }
+        </script>
+        </body>
+        </html>
+        
+<html>
+    <body>
+        <script>
+            var text="Javascript";
+            var x;
+            for(x of text) {
+                document.write(x + "<br>");
+            }
+        </script>
+        </body>
+        </html>

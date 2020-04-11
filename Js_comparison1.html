@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <input id="age" value="18"/>
+        <p id="demo1"></p>
+        <button onclick="myfunction()">Click</button>
+        <script>
+         function myfunction() {
+             var age,votable;
+             age=Number(document.getElementById("age").value) ;
+             if(isNaN(age)) {
+                 votable="Input is not a number";
+
+             } else  {
+                 votable=(age < 18)?"Too young" : "old enough";
+             }
+             document.getElementById("demo1").innerHTML=votable;
+            }
+        </script>
+        </body>
+        </html>

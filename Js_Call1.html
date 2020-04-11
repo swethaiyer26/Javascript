@@ -1,0 +1,25 @@
+<html>
+<body>
+<p id="demo"></p>
+<script>
+    var person={
+        fullName:function(city,country) {
+            return this.firstName + "  " +  this.lastName + " ,"  + city  +  " , "  +  country;
+        }
+    }
+
+    var person1={
+        firstName:"John",
+        lastName:"Doe"
+    }
+
+    var person2={
+        firstName:"Sally",
+        lastName:"Doe"
+    }
+
+    var x=person.fullName.call(person1,"Ottawa","Canada");
+    document.getElementById("demo").innerHTML=x;    
+</script>
+</body>
+</html>

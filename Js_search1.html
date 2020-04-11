@@ -1,0 +1,14 @@
+
+<html>
+    <body>
+        <p id="demo1">Please visit google</p>
+        <button onclick="myfunction()">Try it</button>
+        <script>
+            function myfunction() {                 
+            var a= document.getElementById("demo1").innerHTML;
+            var b=a.replace("google","w3school");
+            document.getElementById("demo1").innerHTML= b;
+        }
+        </script>
+    </body>
+</html>

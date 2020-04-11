@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = isArray(fruits);
+function isArray(myarray) {
+    return myarray.constructor.toString().indexOf("Array") > -1;
+}
+    </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id="demo1"></p>
+        <script>  
+        var mydate=new Date();
+        document.getElementById("demo1").innerHTML=isDate(mydate);
+        function isDate(mydate) {
+            return mydate.constructor.toString().indexOf("Date") > -1
+        }
+    </script>
+    </body>
+</html>

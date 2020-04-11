@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <h2>Javascript unshift</h2>
+        <p id="demo"></p>
+        <button onclick="myfunction()">Try it</button>
+        <script>
+            var fruits=["banana","chickoo","apple","lemon"];
+            document.getElementById("demo").innerHTML=fruits;
+            function myfunction() {
+            fruits.unshift("kiwi");
+            document.getElementById("demo").innerHTML=fruits;
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <h2>Javascript unshift</h2>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <button onclick="myfunction()">Try it</button>
+        <script>
+            var fruits=["banana","chickoo","apple","lemon"];
+            document.getElementById("demo1").innerHTML=fruits;
+            function myfunction() {
+            document.getElementById("demo2").innerHTML=fruits.unshift("cantaloupe");
+            document.getElementById("demo1").innerHTML=fruits;
+            }
+        </script>
+        </body>
+        </html>
+

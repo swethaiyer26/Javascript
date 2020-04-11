@@ -1,0 +1,52 @@
+<html>
+    <body>
+        <h2>Array remove</h2>
+        <p id="demo"></p>
+        <button onclick="myfunction()">try it</button>
+        <script>
+            var fruits=["banana","apple","lime","plum"];
+            document.getElementById("demo").innerHTML=fruits;
+            function myfunction() {
+                fruits.splice(0,1);
+                document.getElementById("demo").innerHTML=fruits;
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <h2>Array remove</h2>
+        <p id="demo1"></p>
+        <script>
+            var mygirls=["Vaishnavi","Lakshmi"];
+            var myboys=["Arjun","Arvind"];
+            var arr1=["john","doe"];
+            var mychildren=mygirls.concat(myboys,arr1);
+            document.getElementById("demo1").innerHTML=mychildren;
+        </script>
+        </body>
+        </html>
+
+<html>
+    <body>
+        <h2>Array concat</h2>
+        <p id="demo2"></p>
+        <script>
+            var array=["john","johnny","janardhan"];
+            var array1=array.concat("sam");
+            document.getElementById("demo2").innerHTML=array1;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id="demo3"></p>
+        <script>
+            var fruits=["plum","cherry","mango","pomegranate"];
+            var citrus=fruits.slice(2);
+            document.getElementById("demo3").innerHTML=fruits + "<br><br>" + citrus;
+        </script>
+    </body>
+</html>

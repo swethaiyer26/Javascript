@@ -1,0 +1,62 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            var person={
+                fullName :function(city,country) {
+                    return this.firstName + " " + this.lastName +  "," + city + "," + country;
+                }
+            }
+
+            var person1={
+                firstName:"John",
+                lastName:"Doe"
+            }
+
+            var person2={
+                firstName:"Sam",
+                lastName:"Doe"
+            }
+
+            var x=person.fullName.apply(person1,["Oslo","Norway"]);
+            document.getElementById("demo").innerHTML=x;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id="demo1"></p>
+        <script>
+            document.getElementById("demo1").innerHTML=Math.max.apply(null,[4,6,8]);
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <p id="demo2"></p>
+        <script>
+            document.getElementById("demo2").innerHTML=Math.max.apply(Math,[4,6,8]);
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <p id="demo3"></p>
+        <script>
+            document.getElementById("demo3").innerHTML=Math.max.apply("",[4,6,8]);
+        </script>
+    </body>
+</html>
+<html>
+    <body>
+        <p id="demo4"></p>
+        <script>
+            document.getElementById("demo4").innerHTML=Math.max.apply(0,[4,6,8]);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <button type="button" onclick="myfunction()">Click me</button>
+        <script>
+            function myfunction() {
+                var a=4;
+                document.getElementById("demo").innerHTML=a*a;
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+<p id="demo1"></p>
+<script>
+    var counter=0;
+    function add(){
+    counter +=1;
+    var counter=0;
+    }
+    add();
+    add();
+    add();
+    document.getElementById("demo1").innerHTML=" The counter is : "  + counter;
+</script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id="demo2"></p>
+        <button type="button" onclick="myfunction()">Click</button>
+        <script>
+            var add=(function () {
+             var counter=0;
+             return function() {counter +=1; return counter;}
+             }) ();
+             
+             function myfunction() {
+             document.getElementById("demo2").innerHTML=add();
+             }
+            </script>
+    </body>
+</html>
+
+
+            
+            }
+        </script>
+    </body>
+</html>

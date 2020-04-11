@@ -1,0 +1,55 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            var person = {
+                firstName:"John",
+                lastName:"Doe",
+                id:7658,
+                fullName:function () {
+                    return this.firstName +   " "  + this.lastName;
+                }
+            };
+            document.getElementById("demo").innerHTML=person.fullName();
+   
+</script>
+</body>
+</html>
+
+<html>
+    <body>
+        <p id="demo1"></p>
+        <script>
+            var hello;
+            hello=function() {
+                return "Hello World!";
+            }
+            document.getElementById("demo").innerHTML=hello();
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id="demo2"></p>
+        <script>
+            var hello;
+            hello=(val) => "Hello" + val;
+            document.getElementById("demo2").innerHTML=hello ("Universe!");
+        </script>
+        </body>
+        </html>
+
+        <html>
+            <body>
+                <button id="btn">Click</button>
+                <p id="demo3"></p>
+                <script>
+                    var hello=() => {
+                        document.getElementById("demo").innerHTML += this;
+                    }
+                    window.addEventListener("load",hello);
+                    document.getElementById("btn").addEventListener("click",hello);
+                </script>
+                </body>
+                </html>
