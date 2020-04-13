@@ -1,0 +1,31 @@
+<html>
+    <body>
+<button id="myBtn">Click it</button>
+<p id="demo"></p>
+<script>
+document.getElementById("myBtn").onclick=displayDate;
+
+function displayDate() {
+    document.getElementById("demo").innerHTML= Date();
+}
+</script>
+    </body>
+</html>
+
+<html>
+    <body onload="checkCookies()">
+    <p id="demo"></p>
+    <script>
+        function checkCookies() {
+            var text="";
+            if(navigator.cookieEnabled ==true) {
+                text="Cookies are enabled";
+            } else {
+                text="Cookies are not enabled";
+            }
+            document.getElementById("demo").innerHTML=text;
+        }
+    </script>
+
+    </body>
+</html>

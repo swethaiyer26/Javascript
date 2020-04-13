@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <div>
+        <p id="01">This is a para.</p>
+        <p id="02">This is second para</p>
+        </div>
+        <button onclick="myfunction()" type="button">Click</button>
+        <script>
+function myfunction() {
+    var element=document.getElementById("01");
+    element.remove();
+}
+        </script>
+    </body>
+</html>
+
+<html>
+<body>
+<div id="div1">
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+</div>
+<script>
+    var parent=document.getElementById("div1");
+    var child=document.getElementById("p1");
+    parent.removeChild(child);
+</script>
+</body>
+</html>

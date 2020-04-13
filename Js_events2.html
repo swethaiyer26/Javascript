@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+            function myFunction() {
+                var x=document.getElementById("fname");
+                x.value=x.value.toUpperCase();
+            }
+        </script>
+    </head>
+    <body>
+    Enter your name:<input type="text" id="fname" onchange="myFunction()">
+    </body>
+</html>
+
+<html>
+    <body>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)"
+style="background-color: chartreuse; width: 120px; height: 20px; padding: 40px;">Mouse over me!</div>
+<script>
+    function mOver(obj) {
+obj.innerHTML="Thank you";
+    }
+    function mOut(obj) {
+        obj.innerHTML="Mouse Over Me";
+    }
+</script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <div id="div">
+        <p id="01">This is a paragraph</p>
+        <p id="02">This ia second para</p>
+        </div>
+        <script>
+        var parent=document.getElementById("div");
+        var child=document.getElementById("01");
+        var para=document.createElement("p");
+        var node=document.createTextNode("this is new");
+        para.appendChild(node);
+        parent.replaceChild(para,child);
+        </script>
+    </body>
+</html>
+

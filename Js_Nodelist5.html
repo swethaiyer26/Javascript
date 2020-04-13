@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <h2>JavaScript HTML DOM!</h2>
+        <p>Hello World!</p>
+        <p>Hello Norway!</p> 
+        <p id="demo"></p>
+        <script>
+        var element=document.querySelectorAll("p");
+        document.getElementById("demo").innerHTML="the inerhtml of second paragraph is "  + element[1].innerHTML;
+        </script>
+    </body>
+</html>
+
+<html>
+<body>
+<h2>JavaScript HTML DOM!</h2>
+<p>Hello World!</p>
+<p>Hellow Norway!</p>
+<p id="demo"></p>
+
+<script>
+var element=document.querySelectorAll("p");
+ document.getElementById("demo").innerHTML="This document contains" + element.length + "paragraphs";
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+ <body>       
+<h2>JavaScript HTML DOM</h2>
+<p>Hello World!</p>
+<p>Hello Norway!</p>
+<p>Click the button to change the color of all p elements.</p>
+<button onclick="myfunction()">Try </button>
+
+<script>
+function myfunction() {
+    var element=document.getElementsByTagName("p");
+    var i;
+    for(i=0;i < element.length;i++) {
+        element[i].style.color="red";
+    }
+}
+</script>
+ </body>
+</html>

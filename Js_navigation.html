@@ -1,0 +1,45 @@
+<html>
+    <body>
+        <h1 id="id01">My Heading</h1>
+        <p id="id02"></p>
+        <script>
+            document.getElementById("id02").innerHTML=document.getElementById("id01").innerHTML;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <h1 id="id011">My Heading</h1>
+        <p id="id021"></p>
+        <script>
+            document.getElementById("id021").innerHTML=document.getElementById("id011").firstChild.nodeValue;
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <h1 id="id012">My Heading</h1>
+        <p id="id013"></p>
+        <script>
+            document.getElementById("id013").innerHTML=document.getElementById("id012").childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+    <p>Hello World</p>
+ <div>       
+<p>The DOM is very useful!</p>
+<p>This example demonstrates the <b>document.body</b> property.</p>
+ </div>
+ <script>
+     alert(document.body.innerHTML);
+ </script>
+    </body>
+</html>
+

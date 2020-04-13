@@ -1,0 +1,30 @@
+<html>
+    <head>
+    <script>
+        function myfunction(x) {
+            x.style.background="yellow";
+        }
+    </script>
+    </head>
+    <body>
+        Enter your name:<input type="text" onfocus="myfunction(this)">
+    </body>
+</html>
+
+<html>
+    <body>
+        <h1 onmouseover="style.color='red'" onmouseout="style.color='black'">Mouse over</h1>
+    </body>
+</html>
+
+<html>
+    <body>
+        <button id="btn">Try</button>
+        <script>
+            document.getElementById("btn").addEventListener("click",function() {
+                alert("Hello World!");
+            })
+        </script>
+    </body>
+</html>
+

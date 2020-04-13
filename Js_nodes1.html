@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <div id="mydiv">
+            <p id="03">This is w3schools</p>
+            <p id="04">W3schools</p>
+        </div>
+        <script>
+            var para1=document.createElement("p");
+            var node=document.createTextNode("google hiiii");
+            para1.appendChild(node);
+            var elm=document.getElementById("mydiv");
+            elm.appendChild(para1);
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <div id="div">
+        <p id="01">Hello world</p>
+        <p id="02">hii there</p>
+        </div>
+        <script>
+         var para=document.createElement("pa") ;
+         var node=document.createTextNode("how are you?");
+         para.appendChild(node);
+         var elem=document.getElementById("div");
+         var child=document.getElementById("01");
+         elem.insertBefore(para,child);
+        </script>
+    </body>
+</html>

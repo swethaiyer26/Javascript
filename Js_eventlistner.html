@@ -1,0 +1,54 @@
+<html>
+    <body>
+        <button id="mybtn">Click</button>
+        <script>
+            var x=document.getElementById("mybtn");
+            x.addEventListener("click",myfunction);
+            x.addEventListener("click",someOtherFunction);
+
+            function myfunction() {
+                alert("Hello world!");
+            }
+
+            function someOtherFunction() {
+                alert("Hiiii");
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <button id="btn">Click</button>
+        <p id="demo"></p>
+        <script>
+            var x=document.getElementById("btn");
+            x.addEventListener("mouseover",myfunction1);
+            x.addEventListener("click",mySecondFunction);
+            x.addEventListener("mouseout",myThirdFunction);
+
+            function myfunction1() {
+                document.getElementById("demo").innerHTML +="Moused over! <br>";
+            }
+
+            function mySecondFunction() {
+                document.getElementById("demo").innerHTML +="Clicked over! <br>";
+
+            }
+            function myThirdFunction() {
+                document.getElementById("demo").innerHTML+= " mouseout ! <br>";
+            }
+      </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id="demo1"></p>
+        <script>
+            window.addEventListener("resize", function() {
+                document.getElementById("demo1").innerHTML=Math.random();
+            });
+        </script>
+    </body>
+</html>

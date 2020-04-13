@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <div id="div1">
+        <p id="p1">This is a heading</p>
+        <p id="p2">This is another heading</p>
+        </div>
+       <script>
+           var para=document.createElement("p");
+           var node=document.createTextNode("this is a new heading");
+           para.appendChild(node);
+           var element=document.getElementById("div1");
+           element.appendChild(para);
+       </script>
+    </body>
+</html>
+

@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <h1 onclick="this.innerHTML='OOOPs!'">Click on this text</h1>
+    </body>
+</html>
+
+<html>
+    <body>
+    <h1 onclick="changeText(this)">Click on the text</h1>
+    <script>
+        function changeText(id) {
+            id.innerHTML="okkk!";
+        }
+    </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <button onclick="displayDate()">Try it</button>
+        <p id="demo"></p>
+        <script>
+            function displayDate() {
+                document.getElementById("demo").innerHTML= Date();
+            }
+        </script>
+    </body>
+</html>
