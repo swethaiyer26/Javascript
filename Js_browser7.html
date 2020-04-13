@@ -1,0 +1,50 @@
+<html>
+    <body>
+        <button onclick="setTimeout(myfunction,3000);">Try</button>
+        <script>
+        function myfunction() {
+            alert('hello');
+        }
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <button myvar onclick="setTimeout(myfunction1,3000);">Click</button>
+        <button onclick="clearTimeout(myvar)">Stop </button>
+        <script>
+            function myfunction1() {
+                alert('hello');
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            var myvar = setInterval(mytimer,1000);
+
+            function mytimer() {
+                var d=new Date() ;
+                document.getElementById("demo").innerHTML= d.toLocaleTimeString();
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id="demo1"></p>
+        <button onclick="clearInterval(myvar2)">Stop</button>
+        <script>
+            var myvar2=setInterval(mytimer1,1000);
+            function mytimer1() {
+                var d1=new Date();
+                document.getElementById("demo1").innerHTML=d1.toLocaleTimeString();
+            }
+        </script>
+    </body>
+</html>

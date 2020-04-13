@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <button onclick="myfunction()">Click</button>
+        <script>
+function myfunction() {
+    alert("i am an alert box");
+}
+        </script>
+    </body>
+    </html>
+
+
+    <html>
+        <body>
+            <p id=01></p>
+            <button onclick="myconfirm()">Click</button>
+            <script>
+                function myconfirm() {
+                    var txt;
+                    if(confirm("Press a button!")) {
+                        txt="you pressed ok !";
+                    } else {
+                        txt="you pressed cancel";
+                    }
+                }
+                document.getElementById("01").innerHTML=txt;
+            </script>
+        </body>
+    </html>
