@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+           var obj,i,x="" ;
+           obj={
+               "name":"John",
+               "age":45,
+               "cars":["Ford","Audi","Force"]
+           };
+           obj.cars[1]="BMW";
+           delete obj.cars[0];
+            for(i in obj.cars)
+           {
+             x+=obj.cars[i]  + "<br>";
+           }
+           document.getElementById("demo").innerHTML=x;
+        </script>
+    </body>
+</html>
+

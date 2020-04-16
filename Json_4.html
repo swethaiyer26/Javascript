@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+         var  xmlhttp=new XMLHttpRequest();
+            xmlhttp.onreadystatechange=function() {
+                if(this.readyState == 4 && this.status ==200) {
+                var myArr=JSON.parse(this.responseText);
+                document.getElementById("demo").innerHTML= myArr[1];
+            }
+        };
+        xmlhttp.open("GET","json_array",true);
+        xmlhttp.send();
+        </script>
+        <p>Take a look at <a href="json_array.txt" target="_blank">json_array</a></p>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id="demo1"></p>
+        <script>
+        var text='{"name":"John","birth":"1986-12-14","city":"Atlanta"}';
+        var obj=JSON.parse(text);
+        obj.birth=new Date(obj.birth);
+        document.getElementById("demo1").innerHTML=obj.name + " " + obj.birth;
+        </script>
+    </body>
+</html>

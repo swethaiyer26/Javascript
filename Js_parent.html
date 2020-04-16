@@ -1,0 +1,14 @@
+<html>
+    <body>
+<h1>Getting Parent HTML Element</h1>
+
+<h2 id="01">Hello World!</h2>
+<h2 id="02">Hello Sweden!</h2>
+<h2 id="03">Hello Japan!</h2>
+<p id="demo"></p>
+<script>
+var myparent=document.getElementById("02").parentNode;
+document.getElementById("demo").innerHTML=myparent.nodeName;
+</script>
+ </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+<p id="demo"></p>
+<p class="intro">Hello World!</p>
+<p class="intro">Hello Sweden!</p>
+<p class="intro">Hello Japan!</p>
+
+<script>
+    $(document).ready(function() {
+        var element=$("p.intro");
+       $("#demo").text("the paragraph with class='intro' is:"  + element[0].innerHTML);
+    });
+</script>
+</body>
+</html>

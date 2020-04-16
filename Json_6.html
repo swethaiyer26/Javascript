@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            var text='{"name":"John","age":"function() {return 30;}","city":"New York"}';
+            var obj=JSON.parse(text);
+            obj.age=eval("(" + obj.age +") ");
+            document.getElementById("demo").innerHTML=obj.name + " " + obj.age();
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+    <p id="demo1"></p>
+    <script>
+    var txt={name:"Jane",age:"34",country:"Australia"};
+    var obj1=JSON.stringify(txt);
+    document.getElementById("demo1").innerHTML=obj1;
+    </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id="demo2"></p>
+        <script>
+        var arr=["John","Jane","Sally","Alan"];
+        var obj2=JSON.stringify(arr);
+        document.getElementById("demo").innerHTML=obj2;
+        </script>
+    </body>
+</html>

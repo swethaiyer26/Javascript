@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            var obj={
+                "name":"john",
+                "age":30,
+                "cars":{
+                "cars1":"Ford",
+                "cars2":"Audi",
+                "cars3":"Force"
+                }
+            }
+            document.getElementById("demo").innerHTML  += obj.cars.cars2 + "<br>";
+            document.getElementById("demo").innerHTML += obj.cars["cars2"];
+        </script>
+        </body>
+</html>

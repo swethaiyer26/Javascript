@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <button onclick="myclick()">Click</button>
+        <script>
+            function myclick() {
+                var s=document.createElement("script");
+                s.src="json_demo2.php?callback=myDisplayFunction";
+                document.body.appendChild(s);
+            }
+
+            function myDisplayFunction(myObj) {
+                document.getElementById("demo").innerHTML=myObj.name;
+            }
+        </script>
+    </body>
+</html>

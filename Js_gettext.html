@@ -1,0 +1,15 @@
+<html>
+    <body>
+ <h1>Getting Text Content</h1>
+<h2 id="01">Hello World!</h2>
+<h2 id="02">Hello Sweden!</h2>
+<h2 id="03">Hello Japan!</h2>
+
+<p id="demo"></p>
+<script>
+    var element=document.getElementById("01");
+    var mytext=element.textContent || element.innerText;
+    document.getElementById("demo").innerHTML=mytext;
+</script>
+ </body>
+ </html>

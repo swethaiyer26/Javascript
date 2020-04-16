@@ -1,0 +1,17 @@
+<html>
+    <body>
+    <p id="demo"></p>
+    <script>
+    var text='{"name":"Alan","birth":"1986-12-15","city":"Mexico"}';
+    var obj = JSON.parse(text ,function(key,value) {
+        if (key == "birth") {
+            return new Date(value);
+
+            } else {
+                return value;
+            }
+        });
+        document.getElementById("demo").innerHTML= obj.name + " ," + obj.birth;
+</script>
+ </body>
+</html>

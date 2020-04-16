@@ -1,0 +1,39 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<h2>Finding HTML Elements by Tag Name</h2>
+
+<p>Hello World!</p>
+<p>Hello Sweden!</p>
+<p>Hello Japan!</p>
+
+<p id="demo"></p>
+
+<script>
+$(document).ready(function() {
+  var myElements = $("p");
+  $("#demo").text("The text in the first paragraph is: " + myElements[0].innerHTML);
+});
+</script>
+
+</body>
+</html>
+
+<html>
+    <body>
+        <p id="demo1"></p>
+        <h2>Finding HTML Elements by Tag Name</h2>
+
+<p>Hello World!</p>
+<p>Hello Sweden!</p>
+<p>Hello Japan!</p>
+<script>
+    var element=document.getElementsByTagName("p");
+    document.getElementById("demo1").innerHTML ="This is the first paragraph : "  + element[0].innerHTML;
+</script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<body>
+    <p id="demo"></p>
+    <script>
+        var obj,x;
+        obj={
+            "name":"john",
+            "age":40,
+            "cars":["Ford","Innova","Force"]
+ };
+ x=obj.cars[1];
+ document.getElementById("demo").innerHTML=x;
+    </script>
+</body>
+</html>
+
+<html>
+    <body>
+        <p id="demo1"></p>
+        <script>
+            var myobj,x,i;
+            myobj={
+            "name":"john",
+            "age":40,
+            "cars":["Ford","Innova","Force"]
+ };
+ for(i in myobj.cars ) {
+     x+=myobj.cars[i] + "<br>";
+ }
+ document.getElementById("demo1").innerHTML=x;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+        var x,myObj;
+        myObj={name:"John",city:"New York",age:30};
+        x=myObj.name;
+        document.getElementById("demo").innerHTML=x;
+    </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id="demo1"></p>
+        <script>
+var x1,myobj1;
+myobj1={name:"John",city:"New York",age:30};
+x1=myobj1["city"];
+document.getElementById("demo1").innerHTML=x1;
+        </script>
+    </body>
+    </html>
+
+    <html>
+     <body>
+     <p id="demo2"></p>
+     <script>
+         var x2,myobj2;
+         myobj2= {name:"John",city:"New York",age:30};
+         myobj2.city="Greece";
+         document.getElementById("demo2").innerHTML=myobj2.city;
+     </script>
+     </body>
+    </html>
+
+    
+    <html>
+     <body>
+     <p id="demo3"></p>
+     <script>
+         var x3,myobj3;
+         myobj3= {name:"John",city:"New York",age:30};
+         myobj3["name"]="Janardhan";
+         document.getElementById("demo3").innerHTML=myobj3.name;
+     </script>
+     </body>
+    </html>
