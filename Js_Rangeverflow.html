@@ -1,0 +1,19 @@
+<html>
+<body>
+<input id="id1" type="number" max="200">
+<button onclick="myclick()">Click</button>
+<p id="demo"></p>
+<script>
+function myclick() {
+    var txt="";
+    if(document.getElementById("id1").validity.rangeOverflow) {
+        txt=" Value is too large";
+    } else {
+        txt="Input ok";
+    }
+document.getElementById("demo").innerHTML=txt;
+}
+</script>
+</body>
+</html>
+
