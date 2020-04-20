@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").on({
+        mouseenter:function() {
+            $(this).css("background-color","pink");
+        },
+        mouseleave:function() {
+            $(this).css("background-color","yellow");
+        },
+        click:function() {
+            $(this).css("background-color","lightgreen");
+        },
+        });
+    });
+</script>
+</head>
+<body>
+    <p>you can learn tutorials from w3-schools.</p>
+</body>
+</html>

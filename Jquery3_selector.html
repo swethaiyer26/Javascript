@@ -1,0 +1,26 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function() {
+            $("ul li:last-child").hide();  /*first,first-child,last*/
+        });
+    });
+</script>
+</head>
+<body>
+<p>List 1:</p>
+<ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ul>
+<ul>
+    <li>Coke</li>
+    <li>Sprite</li>
+    <li>Pepsi</li>
+</ul>
+<button>Click me!</button>
+</body>
+</html>
