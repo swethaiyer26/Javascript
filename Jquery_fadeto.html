@@ -1,0 +1,20 @@
+<html>
+ <head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+$("#div1").fadeTo("slow",0.3);
+$("#div2").fadeTo("slow",0.6);
+$("#div3").fadeTo("slow",0.8);
+});
+});
+</script>
+</head>
+<body>
+<button>Click me</button>
+<div id="div1" style="width: 80px;height: 80px; background-color: red;"></div></br>
+<div id="div2" style="width: 80px;height: 80px; background-color:blue;"></div></br>
+<div id="div3" style="width: 80px;height: 80px; background-color: violet;"></div></br>
+</body>
+</html>
