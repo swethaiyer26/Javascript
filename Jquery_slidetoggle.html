@@ -1,0 +1,28 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function() {
+   $("#panel").slideToggle("slow");
+    });
+});
+</script>
+<style>
+    #panel,#flip{
+        text-align: center;
+        border: 2px solid blue;
+        padding: 5px;
+        background-color: chocolate;
+    }
+    #panel{
+        padding: 50px;
+        display: none;
+    }
+</style>
+</head>
+<body>
+    <div id="flip">This is a slideToggle</div>
+    <div id="panel">This is paragraph</div>
+</body>
+</html>
