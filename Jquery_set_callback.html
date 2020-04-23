@@ -1,0 +1,25 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("#btn1").click(function() {
+    $("#test1").text(function(i,origText) {
+        return "Old Text :" + origText + "New Text:Hello  world (index: " + i +")";
+    });
+    });
+    $("#btn2").click(function() {
+    $("#test2").html(function(i,origText) {
+        return "old Text:" + origText + "New  Text:Hello <b>world</b> (index:" + i +")";
+    });
+    });
+});
+</script>
+</head>
+<body>
+<p id="test1">This is a paragraph</p>
+<p id="test2">This is another <b>bold</b> paragraph.</p>
+<button id="btn1">Show old/New Text</button>
+<button id="btn2">Show old/new Html</button>
+</body>
+</html>
