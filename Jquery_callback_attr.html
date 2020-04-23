@@ -1,0 +1,18 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function() {
+$("#w3s").attr("href",function(i,orgValue) {
+ return orgValue + "/jquery/";
+});
+});
+});
+</script>
+</head>
+<body>
+<button>Click</button>
+<p><a href="https://www.w3schools.com" id="w3s">W3schools</a></p>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+function afterText() {
+    var txt1="<b>I</b>";
+    var txt2=$("<i></i>").text("love");
+    var txt3=document.createElement("b");
+    txt3.innerHTML="Jquery!";
+    $("img").after(txt1,txt2,txt3);
+}
+</script>
+</head>
+<body>
+<img src="w3jquery.gif" width="100" height="140" alt="jquery">
+<button onclick="afterText()">Click</button>
+</body>
+</html>

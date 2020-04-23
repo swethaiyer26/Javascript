@@ -1,0 +1,22 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btn1").click(function() {
+$("img").before("<b>Before</b>");
+});
+
+$("#btn2").click(function() {
+    $("img").after("<b>After</b>");
+});
+});
+</script>
+</head>
+<body>
+<img src="w3jquery.gif" alt="jquery" width="100" height="140"><br>
+<br>
+<button id="btn1">Before</button>
+<button id="btn2">After</button>
+</body>
+</html>
