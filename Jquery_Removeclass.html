@@ -1,0 +1,25 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+$("h1, h2, p").removeClass("blue");
+  });
+});
+  </script>
+  <style>
+      .blue{
+          font-style: italic;
+          color: olivedrab;
+      }
+</style>
+</head>
+<body>
+    <h1 class="blue">This is heading</h1>
+    <h2 class="blue">This is also a paragraph</h2>
+    <p class="blue">This is a paragraph</p>
+    <button>Click me</button>
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $("button").click(function() {
+        $("#div1").addClass("important blue");
+        });
+        });
+    </script>
+    <style>
+    .important{
+        font-size: xx-large;
+        font-weight: 200;
+    }
+    .blue{
+        color: midnightblue;
+    }
+    </style>
+    </head>
+    <body>
+        <div id="div1">This is some text</div>
+        <div>This is some text</div>
+        <button>Click Me!</button>
+    </body>
+    </html>
