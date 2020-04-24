@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+.ancestor *{
+    display: block;
+    padding: 5px;
+    margin: 15px;
+    border: indigo 2px solid;
+    color:pink;
+
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("span").parentsUntil("div").css({"color":"red","border":"2px solid red"});
+});
+</script>
+</head>
+<body class="ancestor">body(great-great-grandparent)
+    <div style="width: 500px;">div(great-grandparent)
+    <ul>ul(grandparent)
+        <li>li(parent)
+        <span>span</span>
+</li>
+    </ul>
+    </div>
+</body>
+</html>
+

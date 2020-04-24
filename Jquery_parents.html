@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style>
+            .ancestors *{
+                display: block;
+                padding: 3px;
+                margin: 15px;
+                color: blue;
+                border: 2px solid orangered;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+        $("span").parents().css({"color":"red","border":"2px solid red"});
+        });
+    </script>
+    </head>
+
+    <body class="ancestors">body(great-great-grandparent)
+    <div style="width: 500px;">div(great-grandparent)
+    <ul>ul(grandparent)
+    <li>li(parent)
+   <span>span</span>
+   </li>
+    </ul>
+    </div>   
+    </body>
+</html>
