@@ -1,18 +1,19 @@
 <html>
-    <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    </head>
-    <body>
-<p id="demo"></p>
-<p class="intro">Hello World!</p>
-<p class="intro">Hello Sweden!</p>
-<p class="intro">Hello Japan!</p>
-
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-    $(document).ready(function() {
-        var element=$("p.intro");
-       $("#demo").text("the paragraph with class='intro' is:"  + element[0].innerHTML);
-    });
+$(document).ready(function(){
+  $("button").click(function(){
+    alert("Background color is :" + $("p").css("background-color"));
+  });
+});
 </script>
-</body>
+</head>
+<body>
+    <h2>This is a heading</h2>
+    <p style="background-color: red;">This is a paragraph</p>
+    <p style="background-color: blue;">This is a paragraph</p>
+    <p style="background-color: green;">This is a paragraph</p>
+    <button>Click Me!</button>
+</body> 
 </html>

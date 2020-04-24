@@ -1,0 +1,34 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function() {
+var txt="";
+txt +="Width of the div:" + $("#div1").width() + "<br>";
+txt +="Height of the div:" + $("#div1").height() + "<br>";
+txt +="Outer width of div:" + $("#div1").outerWidth(true) +"<br>";
+txt +="Outer height of div:" + $("#div1").outerHeight(true);
+$("#div1").html(txt);
+});
+});
+</script>
+<style>
+    #div1{
+        padding: 15px;
+        margin: 5px;
+        border: 2px solid mediumseagreen;
+        background-color: mistyrose;
+        width: 300px;
+        height: 100px;
+
+    }
+</style>
+</head>
+<body>
+    <div id="div1"></div>
+    <button>Click me</button>
+    <p>This is outerHeight </p>
+    <p>Thi is outerWidth</p>
+</body>
+</html>

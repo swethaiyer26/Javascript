@@ -1,0 +1,35 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+$("button").click(function(){
+var txt="";
+txt += "Width of div:" + $("#div1").width() + "<br>";
+txt +="Height of div:" + $("#div1").height() + "<br>";
+txt +="Innerwidth of div:" + $("#div1").innerWidth() + "<br>";
+txt +="InnerHeight of div:" + $("#div1").innerHeight();
+$("#div1").html(txt);
+});
+});
+</script>
+<style>
+#div1{
+    height: 100px;
+    width: 300px;
+    margin: 5px;
+    padding: 10px;
+    border:maroon 2px solid;
+    background-color: mediumpurple;
+}
+</style>
+</head>
+<body>
+<div id="div1">
+ <br>
+</div>
+<button>Click me</button>   
+<p>width() - returns the width of an element.</p>
+<p>height() - returns the height of an element.</p>
+</body>
+</html>
