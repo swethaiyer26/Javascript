@@ -1,0 +1,20 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+var txt="";
+txt +="Document text/width:" + $(document).width();
+txt +="Document text/height:" + $(document).height() + "\n";
+txt +="window text/width:"  + $(window).width();
+txt +="window text/height:" + $(window).height();
+alert(txt);
+});
+});
+</script>
+</head>
+<body>
+<button>Click me!</button>
+</body>
+</html>
