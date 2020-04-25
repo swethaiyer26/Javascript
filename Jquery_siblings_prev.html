@@ -1,0 +1,28 @@
+<html>
+<head>
+<style>
+    .siblings *{
+        display: block;
+        margin: 15px;
+        padding: 5px;
+        color: cornflowerblue;
+        border: 2px solid crimson;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("h2").prev().css({"border":"2px solid brown","color":"brown"});
+});
+</script>
+</head>
+<body class="siblings">
+ <div>div(parent)
+<p>p</p>
+<span>span</span>
+ <h2>h2</h2>
+<h3>h3</h3>
+<p>p</p>
+</div>
+</body>
+</html>

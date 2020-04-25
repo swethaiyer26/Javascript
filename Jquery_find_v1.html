@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style>
+            .descendants *{
+                padding: 5px;
+                display: block;
+                margin: 15px;
+                border: 2px solid goldenrod;
+                color: greenyellow;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+        $("div").find("*").css({"color":"red","border":"2px solid red"});
+        });
+        </script>    
+    </head>
+    <body class="descendants" style="width: 500px;">div(current element)
+    <p>p(child)     
+    <span>span(grandchild)
+    </p>
+    </span>
+    <p>p(child)     
+    <span>span(grandchild)
+    </p>
+    </span>
+    </body>
+</html>

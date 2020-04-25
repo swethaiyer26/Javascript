@@ -1,0 +1,30 @@
+<html>
+    <head>
+    <style>
+    .descendants * {
+   margin: 15px;
+   padding: 5px;
+   display: block;
+   border: brown 2px solid ;
+   color:chartreuse;
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+     $(document).ready(function(){
+    $("div").children("p.first").css({"color":"blue","border":"2px solid blue"});
+     }) ;  
+    </script>
+    </head>
+    <body>
+    <div class="descendants" style="width: 500px;">div(current element)
+        <p class="first">p ( child)
+        <span>span (grandchild)</span>
+        </p>
+        <p class="second">p(child)
+            <span>span (grandchild)</span>
+            </p>
+
+    </div>
+    </body>
+</html>
