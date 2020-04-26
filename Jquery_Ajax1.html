@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+        $("button").click(function(){
+        $("#div1").load("demo_test.txt #p1");
+        });
+        });
+        </script>
+    </head>
+    <body>
+    <div id="div1">It is fun to learn ajax</div>
+    <p id="p1">This is fun to learn</p>
+    <button>Click me</button>
+    </body>
+    </html>

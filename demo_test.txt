@@ -1,0 +1,6 @@
+<html>
+<body>
+<h1>Jquery and Ajax both are fun to learn</h1>
+<p>This is some text in a paragraph</p>
+</body>
+</html>
