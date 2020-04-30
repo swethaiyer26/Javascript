@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>Draggable</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-smoothness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    </head>
+    <body>
+        <div id="div1" style="border: 2px solid blue; background-color: lightyellow;">
+        <span>Dragging is disabled</span><br><br></div>
+        <div id="div2" style="border: 2px solid blue; background-color: lightblue;">
+        <span>Dragging is enabled</span><br><br></div>
+        <div id="div3" style="border: 2px solid blue; background-color: lightcoral;">
+         <span>Dragging widget</span><br><br></div>
+         <div id="div4" style="border: 2px solid blue; background-color: lightgreen;">
+         <span>Dragging option</span><br><br></div>
+
+        <script>
+        $("#div1 span").draggable();
+        $("#div1 span").draggable("disabled");
+        $("#div2 span").draggable();
+        $("#div2 span").draggable("enabled");
+        $("#div3 span").draggable();
+        $("#div3 span").draggable("widget");
+        $("#div4 span").draggable();
+        $("#div4 span").draggable("option");
+        </script>
+    </body>
+    </html>

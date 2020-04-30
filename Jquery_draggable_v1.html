@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>Draggable</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-smoothness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    </head>
+      <body>
+        <div id="div1" style="border: 2px solid green;background-color: yellow;">
+            <span>You can't move me!</span><br /><br /></div>
+        <div id="div2" style="border: 2px solid tomato;background-color: yellowgreen;">
+        <span> Dragging will start only after you drag me for 50px</span></div>
+        <div id="div3" style="border:2px solid blue;background-color:palevioletred;">
+            <span>  You have to wait for 500ms for dragging to start!</span>
+            <br><br></div>
+            <div id="div4" style="border: purple 2px solid;background-color:yellowgreen;">
+            <span>You can drag me only within this div.</span><br><br></div>
+            <div id="div5" style="border: purple 2px solid;background-color:yellow;">
+                <span>You can drag me only within x axis</span><br><br></div>
+                <div id="div6" style="border: purple 2px solid;background-color:lightblue;">
+                    <span>You can drag me only within y axis.</span><br><br></div>
+                <div id="div7" style="border: 2px solid red;background-color: lightgreen;">
+                <span>You can duplicate me</span><br><br></div>
+            <script>
+            $("#div1 span").draggable({disabled:true});
+            $("#div2 span").draggable({distance:50});
+            $("#div3 span").draggable({delay:500});
+            $("#div4 span").draggable({containment:"#div4"});
+            $("#div5 span").draggable({axis:"x"});
+            $("#div6 span").draggable({axis:"y"});
+            $("#div7 span").draggable({helper:"clone"});
+            </script>
+      </body>
+      </html>
+      

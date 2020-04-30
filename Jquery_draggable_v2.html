@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>Draggable</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-smoothness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    </head>
+    <body>
+    <div id="divx" style="border: 2px solid green; background-color: lightsalmon;">
+        <span>Click anywhere on me to see cursor type...</span>
+    </div>
+    <script>
+    $("#divx span").draggable();
+
+    $("#divx span").bind('click',function(event){
+        var cursor=$("#divx span").draggable("option","cursor");
+        var cursorAt=$("#divx span").draggable("option","cursorAt");
+        alert("Cursor type -" + cursor + ",CursorAt " + cursorAt);
+    });
+</script>
+    </body>
+    </html>

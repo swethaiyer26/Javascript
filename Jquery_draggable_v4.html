@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>Draggable</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-smoothness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    </head>
+    <body>
+        
+        <div id="div1" style="border: 2px solid maroon; background-color: lightseagreen;">
+        <span>Event draggable</span><br><br></div>
+        <script>
+        $("#div1 span").draggable({
+            cursor:"move",
+            axis:"x",
+            drag:function(event,ui) {
+                alert("hii");
+            }
+        });
+        </script>
+
+    </body>
+    </html>
+ [create,drag,start,stop]
