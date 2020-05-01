@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI Droppable - Default functionality</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <style>
+        #draggable{
+            width: 100px;
+            height: 50px;
+            padding: 5px;
+            margin: 22px 5px 10px 0;
+            float:  left;
+        }
+        #droppable{
+            width: 120px;
+            height: 90px;
+            padding: 5px;
+            margin: 10px;
+            float: left;
+        }
+      </style>
+      <script>
+        $(function(){
+        $("#draggable").draggable();
+        $("#droppable").droppable({
+            drop:function(event,ui) {
+                $(this) 
+                .addClass("ui-state-highlight")
+                .find("p")
+                .html("dropped");
+            } ,
+            over:function(event,ui) {
+                $(this) 
+                .addClass("ui-state-highlight")
+                .find("p")
+                .html("moving in");
+            },
+            out:function(event,ui) {
+            $(this) 
+                .addClass("ui-state-highlight")
+                .find("p")
+                .html("moving out");
+        },
+        activate:function(event,ui){
+            $(this) 
+                .addClass("ui-state-highlight")
+                .find("p")
+                .html("activate");
+        },
+        create:function(event,ui){
+            $(this) 
+                .addClass("ui-state-highlight")
+                .find("p")
+                .html("create");
+        },
+        deactivate:function(event,ui){
+            $(this) 
+                .addClass("ui-state-highlight")
+                .find("p")
+                .html("deactivate");
+        }
+        });
+        });
+      </script>
+      </head>
+      <body>
+          <div id="draggable" class="ui-widget-content">
+              <p>drag</p>
+          </div>
+          <div id="droppable" class="ui-widget-header">
+              <p>Drop Here</p>
+          </div>
+      </body>
+      </html>

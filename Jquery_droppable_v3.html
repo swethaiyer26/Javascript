@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI Droppable - Default functionality</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <style type="text/css">
+      #draggable{
+          width:100px;
+          height:50px;
+          padding:5px;
+          margin:21px 5px 10px 0;
+          float: left;
+      }
+      #droppable{
+          width:120px;
+          height: 90px;
+          margin: 10px;
+          padding: 5px;
+          float: left;
+      }
+      .active{
+          background: darkcyan;
+          border-color: darkred;
+      }
+      .hover{
+          background: darkslateblue;
+          border-color: darkviolet;
+      }
+    </style>
+    <script>
+        $(function() {
+    $("#draggable").draggable();
+    $("#droppable").droppable({
+        activeClass:"active",
+        hoverClass:"hover",
+        drop:function(event,ui) {
+            $(this)
+            .addClass("ui-state-highlight")
+            .find("p")
+            .html("dropped!");
+        }
+    });
+        });
+    </script>
+    </head>
+    <body>
+        <div id="draggable" class="ui-widget-content">
+        <p>Drag me to my target</p>
+        </div>
+        <div id="droppable" class="ui-widget-header">
+       <p>Drop here</p>
+       </div>
+    </body>
+    </html>
