@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI selectable-1</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <style>
+        #selectable .ui-selecting{
+              background: powderblue;
+        }
+        #selectable .ui-selected{
+              background:red;
+              color: purple;
+        }
+        #selectable{
+            list-style-type: none;
+            margin: 0;
+            padding:0 ;
+            width: 20%;
+        }
+        #selectable li{
+            margin: 3px;
+            padding: 4px;
+            font-size:16px;
+            height: 18px;
+        }
+        .ui-widget-content{
+            background:grey ;
+            border: maroon 2px solid;
+            color: mediumblue;
+        }
+    </style>
+    <script>
+    $(function(){
+   $("#selectable").selectable({
+       filter:"li:first-child"
+   }) ;
+
+   });
+</script>
+</head>
+<body>
+<ol id="selectable">
+<li class="ui-widget-content">Product1</li>
+<li class="ui-widget-content">Product2</li>
+<li class="ui-widget-content">Product3</li>
+<li class="ui-widget-content">Product4</li>
+<li class="ui-widget-content">Product5</li>
+<li class="ui-widget-content">Product6</li>
+</ol>
+</body>
+</html>

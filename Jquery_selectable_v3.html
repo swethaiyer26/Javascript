@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI selectable-1</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <style>
+        #selectable1 .ui-selecting,#selectable1 .ui-selecting,#selectable2 .ui-selecting,#selectable3 .ui-selecting{
+              background: powderblue;
+        }
+        #selectable .ui-selected, #selectable1 .ui-selected, #selectable2 .ui-selected,#selectable3 .ui-selected{
+              background:red;
+              color: purple;
+        }
+        #selectable, #selectable1, #selectable2,#selectable3{
+            list-style-type: none;
+            margin: 0;
+            padding:0 ;
+            width: 20%;
+        }
+        #selectable li, #selectable1 li, #selectable2 li,#selectable3 li{
+            margin: 3px;
+            padding: 4px;
+            font-size:16px;
+            height: 18px;
+        }
+        .ui-widget-content{
+            background:grey ;
+            border: maroon 2px solid;
+            color: mediumblue;
+        }
+    </style>
+    <script>
+    $(function(){
+    $("#selectable").selectable();
+    $("#selectable").selectable('disable');
+    $("#selectable1").selectable();
+    $("#selectable1").selectable('enable');
+    $("#selectable2").selectable();
+    $("#selectable2").selectable("option","distance",1);
+    $("#selectable3").selectable();
+    $("#selectable3").selectable('destroy');
+    });
+    </script>
+    </head>
+    <body>
+    <h3>Using disable</h3>
+    <ol id="selectable">
+        <li class="ui-widget-content">Product1</li>
+        <li class="ui-widget-content">Product2</li>
+        <li class="ui-widget-content">Product3</li>
+    </ol>
+    <h3>Using enable</h3>
+      <ol id = "selectable1">
+         <li class = "ui-widget-content">Product 4</li>
+         <li class = "ui-widget-content">Product 5</li>
+         <li class = "ui-widget-content">Product 6</li>
+         <li class = "ui-widget-content">Product 7</li>
+      </ol>
+      <h3>Select using method option( optionName, value )</h3>
+      <ol id = "selectable2">
+         <li class = "ui-widget-content">Product 8</li>
+         <li class = "ui-widget-content">Product 9</li>
+         <li class = "ui-widget-content">Product 10</li>
+         <li class = "ui-widget-content">Product 11</li>
+      </ol>
+      <h3>Using destroy</h3>
+      <ol id = "selectable3">
+         <li class = "ui-widget-content">Product 12</li>
+         <li class = "ui-widget-content">Product 13</li>
+         <li class = "ui-widget-content">Product 14</li>
+         <li class = "ui-widget-content">Product 15</li>
+      </ol>
+    </body>
+    </html>
+ 
