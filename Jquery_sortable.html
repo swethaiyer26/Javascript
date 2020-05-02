@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI selectable-7</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <style>
+        #sortable{
+list-style-type: none;
+padding: 0;
+margin: 0;
+width: 25%;
+          }
+    #sortable li{
+        margin: 0,3px,3px,3px;
+        padding: 4px;
+        padding-left: 1.5px;
+        height: 16px;
+        font-size: 17px;
+    }
+    .default{
+        background:lightyellow;
+        color: magenta;
+        border: mediumorchid 2px solid;
+    }
+      </style>
+      <script>
+          $(function(){
+            $("#sortable").sortable();
+          });
+      </script>
+      </head>
+      <body>
+          <ul id="sortable">
+        <li class="default">Product1</li>
+        <li class="default">Product2</li>
+        <li class="default">Product3</li>
+        <li class="default">Product4</li>
+        <li class="default">Product5</li>
+       </ul>
+      </body>
+      </html>

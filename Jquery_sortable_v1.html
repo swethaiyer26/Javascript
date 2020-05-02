@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI selectable-7</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <style>
+        #sortable1,#sortable2,#sortable3,#sortable4,#sortable5,#sortable6{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width:25%
+        }
+        #sortable1 li,#sortable2 li,#sortable3 li,#sortable4 li,#sortable5 li,#sortable6 li{
+            margin: 0px 3px 3px 3px;
+            padding: 4px;
+            padding-left: 1.5px;
+            height: 17px;
+            font-size:15px;}
+    .default{
+        background:lightsalmon;
+        border: 2px solid blue;
+        color: lime;
+    }
+      </style>
+      <script>
+        $(function(){
+        $("#sortable1").sortable({
+            delay:1000
+        });
+        $("#sortable2").sortable({
+            distance:50
+        });
+$("#sortable3").sortable({
+    scroll:true
+});
+$("#sortable4").sortable({
+    scrollSpeed:20
+});
+$("#sortable5").sortable({
+    scrollSensitivity:30
+});
+$("#sortable6").sortable({
+    revert:true
+});
+        })
+      </script>
+      </head>
+      <body>
+          <h3>Delay</h3>
+        <ul id="sortable1">
+        <li class="default">Product 1</li>
+        <li class="default">Product 2</li>
+        <li class="default">Product 3</li>
+        </ul>
+
+        <h3>Distance</h3>
+        <ul id="sortable2">
+        <li class="default">Product 4</li>
+        <li class="default">Product 5</li>
+        <li class="default">Product 6</li>
+        </ul>
+
+        <h3>Scroll</h3>
+        <ul id="sortable3">
+        <li class="default">Product 7</li>
+        <li class="default">Product 8</li>
+        <li class="default">Product 9</li>
+        </ul>
+
+        <h3>Scroll speed</h3>
+        <ul id="sortable4">
+        <li class="default">Product 10</li>
+        <li class="default">Product 11</li>
+        <li class="default">Product 12</li>
+        </ul>
+
+        <h3>Scroll sensitivity</h3>
+        <ul id="sortable5">
+        <li class="default">Product 13</li>
+        <li class="default">Product 14</li>
+        <li class="default">Product 15</li>
+        </ul>
+        
+        <h3>Revert</h3>
+        <ul id="sortable6">
+        <li class="default">Product 16</li>
+        <li class="default">Product 17</li>
+        <li class="default">Product 18</li>
+        </ul>
+        </body>
+        </html>

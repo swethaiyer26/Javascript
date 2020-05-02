@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI selectable-7</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <style>
+        #sortable1,#sortable2,#sortable3,#sortable4,#sortable5,#sortable6,#sortable7{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width:25%
+        }
+        #sortable1 li,#sortable2 l,#sortable3 li,#sortable4 li,#sortable5 li,#sortable6 li,#sortable7 li{
+            margin: 0px 3px 3px 3px;
+            padding: 4px;
+            padding-left: 1.5px;
+            height: 17px;
+            font-size:15px;}
+    .default{
+        background:lightsalmon;
+        border: 2px solid blue;
+        color: lime;
+    }
+    .highlight{
+        background: yellow;
+        border: 2px solid green;
+        font-size:45px;
+        font-weight:bold
+    }
+      </style>
+      <script>
+$(function(){
+    $("#sortable1").sortable({
+        placeholder:"highlight"
+    });
+    $("#sortable2").sortable({
+        tolerance:intersect
+    });
+    $("#sortable3").sortable({
+        opacity:true
+    });
+
+    $("#sortable5").sortable({
+        grid:true
+    });
+    $("#sortable6").sortable({
+       handle:true
+    });
+    $("#sortable7").sortable({
+       forceHelperSize:true
+    });
+});
+</script>
+ </head>
+ <body>
+<h3>Placeholder</h3>
+<ul id="sortable1">
+<li class="default">List1</li>
+<li class="default">List2</li>
+<li class="default">List3</li>
+</ul>
+<h3>Tolerance</h3>
+<ul id="sortable2">
+<li class="default">List1</li>
+<li class="default">List2</li>
+<li class="default">List3</li>
+</ul>
+<h3>Opacity</h3>
+<ul id="sortable3">
+<li class="default">List1</li>
+<li class="default">List2</li>
+<li class="default">List3</li>
+</ul>
+<h3>Grid</h3>
+<ul id="sortable5">
+<li class="default">List1</li>
+<li class="default">List2</li>
+<li class="default">List3</li>
+</ul>
+<h3>Handle</h3>
+<ul id="sortable6">
+<li class="default">List1</li>
+<li class="default">List2</li>
+<li class="default">List3</li>
+</ul>
+<h3>forceHelperSize</h3>
+<ul id="sortable7">
+<li class="default">List1</li>
+<li class="default">List2</li>
+<li class="default">List3</li>
+</ul>
+ </body>
+ </html>
