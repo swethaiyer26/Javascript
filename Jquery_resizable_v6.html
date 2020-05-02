@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI Droppable - Default functionality</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <style>
+    .ui-widget-header{
+        background-color: lightgreen;
+        border: 2px solid green;
+        color: violet;
+        font-weight: bold;
+    }
+    .ui-widget-content{
+        background-color:gray;
+        border: 2px solid blue;
+        color: blueviolet;
+    }
+    
+#resizable1,#resizable2{
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    border: 2px solid green;
+    padding: 5px;
+    margin: 0;
+}
+</style>
+<script>
+$(function(){
+ $("#resizable1").resizable();
+ $("#resizable1").resizable('disable');
+ $("#resizable2").resizable();
+ $("#resizable2").resizable('destroy');
+});
+</script>
+</head>
+<body>
+<div id="resizable1" class="ui-widget-content">
+<h3 class="w3-widget-header">disable</h3>
+</div>
+<div id="resizable2" class="ui-widget-content">
+<h3 class="w3-widget-header">destroy</h3>
+</div>
+</body>
+</html>

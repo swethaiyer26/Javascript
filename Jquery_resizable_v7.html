@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI Droppable - Default functionality</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <style>
+    .ui-widget-header{
+        background-color: lightgreen;
+        border: 2px solid green;
+        color: violet;
+        font-weight: bold;
+    }
+    .ui-widget-content{
+        background-color:gray;
+        border: 2px solid blue;
+        color: blueviolet;
+    }
+    
+#resizable1{
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    border: 2px solid green;
+    padding: 5px;
+    margin: 0;
+}
+</style>
+<script>
+$(function(){
+    $("#resizable1").resizable({
+
+        create:function(event,ui){
+        $("#resizable2").text("i am created");
+        },
+        resize:function(event,ui){
+        $("#resizable3").text("top=" + ui.position.top +
+        ", left =" + ui.position.left +
+        ", width= "  +  ui.position.width + 
+        ", height= "   + ui.position.height);
+        } ,
+        start:function(event,ui){
+        $("#resizable4").text("i have started");
+        } ,
+        stop:function(event,ui){
+        $("#resizable5").text("i have stopped");
+        }
+    });
+});
+</script>
+</head>
+<body>
+<div id="resizable1" class="ui-widget-content">
+<h3 class="ui-widget-header">Resize!!</h3>
+</div><br>
+<span id="resizable2"></span><br>
+<span id="resizable3"></span><br>
+<span id="resizable4"></span><br>
+<span id="resizable5"></span>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI Droppable - Default functionality</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <style>
+          .ui-widget-header{
+              background-color: cornflowerblue;
+              color: crimson;
+              font-weight: bold;
+              border: 2px solid blue;
+          }
+          .ui-widget-content{
+              background-color: burlywood;
+              border: 2px solid brown;
+              color: darkblue;
+          }
+
+          #resizable{
+              text-align: center;
+              margin:0;
+              width: 120px;
+              height: 120px;
+              padding: 5px;
+          }
+      </style>
+      <script>
+          $(function() {
+            $("#resizable").resizable({
+            animate:true
+            });
+            $("#resizable1").resizable({
+                ghost:true
+            });
+          });
+      </script>
+      </head>
+      <body>
+          <div id="resizable" class="ui-widget-content">
+              <h3 class="ui-widget-header">Pull my edges and Check the animation!!</h3>
+          </div>
+          <div id="resizable1" class="ui-widget-content">
+            <h3 class="ui-widget-header">i am a ghost</h3>
+          </div>
+      </body>
+      </html>
