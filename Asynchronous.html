@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Asynchronous</title>
+    </head>
+    <body>
+        <h1>Asynchronous javascript</h1>
+        <script>
+        const second=() => {
+          setTimeout(() => {
+              console.log("Second");
+          },1000)
+        }
+        const first=() => {
+        console.log("first");
+        second();
+        console.log("The end");
+        }
+        first();
+        </script>
+    </body>
+</html>

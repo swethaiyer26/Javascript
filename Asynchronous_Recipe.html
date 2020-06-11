@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Recipes</title>
+    </head>
+    <body>
+        <h1>Recipes</h1>
+        <script>
+        function getRecipe(){
+            setTimeout(() => {
+            const recipeID=[345,675,900,234];
+            console.log(recipeID);
+
+   setTimeout(id => {
+       const recipe={title:'Fresh tomato Pasta',publisher:'Jonas'};
+       console.log(`${id}: ${recipe.title} `);
+
+       setTimeout(publisher => {
+           const recipe2={title:'Italian Pizza',publisher:'Jonas'};
+           console.log(recipe);
+       },1500,recipe.publisher);
+       
+   },1500,recipeID[2]);
+
+        },1500);
+    }
+    getRecipe();
+        </script>
+    </body>
+</html>
